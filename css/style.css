@@ -1152,3 +1152,227 @@ body {
     }
   }
   
+  /* ACHIEVEMENTS SECTION */
+.achievements {
+    padding: 80px 8%;
+    background: #f8f9fc;
+    text-align: center;
+  }
+  
+  .achievements h2 {
+    font-size: 2.8rem;
+    color: #0a3d62;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  
+  .achievements-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 50px;
+  }
+  
+  .achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .achievement-card {
+    background: #fff;
+    padding: 35px 20px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+  }
+  
+  .achievement-card img {
+    width: 500px;
+    height: 500px;        /* 👈 increase this value */
+    object-fit: cover;   /* keeps image clean & proportional */
+    margin-bottom: 50px;
+    border-radius: 14px; /* optional – looks premium */
+  }
+  
+  .achievement-card h3 {
+    font-size: 2rem;
+    color: #0a3d62;
+    font-weight: 700;
+  }
+  
+  .achievement-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* MOBILE RESPONSIVE */
+  @media (max-width: 900px) {
+    .achievements-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .achievements-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* OUR BOOKS SECTION */
+.books-section {
+    padding: 80px 8%;
+    background: #ffffff;
+    text-align: center;
+  }
+  
+  .books-section h2 {
+    font-size: 2.8rem;
+    color: #0a3d62;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  
+  .books-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 50px;
+  }
+  
+  .books-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  
+  .book-card {
+    background: #f8f9fc;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  }
+  
+  .book-card img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .book-card h3 {
+    font-size: 1.4rem;
+    color: #0a3d62;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  
+  .book-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .book-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1e90ff;
+  }
+  
+  .btn-view-books {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 14px 36px;
+    background: #1e90ff;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-view-books:hover {
+    background: #0a3d62;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .books-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .books-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* COUNSELLING CARDS WITH IMAGE */
+.counselling-content {
+    padding: 80px 8%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  
+  .counselling-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .counselling-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+  }
+  
+  /* IMAGE */
+  .counselling-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  /* TEXT */
+  .counselling-text {
+    padding: 25px;
+    text-align: left;
+  }
+  
+  .counselling-text h3 {
+    color: #0a3d62;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .counselling-text p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .counselling-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .counselling-image img {
+      height: 160px;
+    }
+  }
+  
