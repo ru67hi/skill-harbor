@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courses | Skill Harbor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- COURSES -->
+<section class="courses">
+  <h2 class="section-title">Our Courses</h2>
+
+  <div class="course-grid">
+
+    <!-- COURSE CARD -->
+    <div class="course-card">
+      <h3>Full Stack Development</h3>
+      <p>HTML, CSS, JavaScript, React, Backend</p>
+
+      <!-- LOCKED VIDEO -->
+      <div class="video-lock">
+        🔒 Video Locked
+      </div>
+
+      <div class="course-price">₹9,999</div>
+
+      <button onclick="openPayment()">Access Course</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- PAYMENT MODAL -->
+<div id="paymentModal" class="payment-modal">
+  <div class="payment-box">
+    <h3>Complete Payment</h3>
+    <p>Pay ₹9,999 to unlock the course</p>
+    <button onclick="paymentSuccess()">Pay Now</button>
+    <button class="cancel" onclick="closePayment()">Cancel</button>
+  </div>
+</div>
+
+<!-- VIDEO PLAYER (HIDDEN INITIALLY) -->
+<section id="videoSection" class="video-section">
+  <h2>Course Video</h2>
+
+  <video controls autoplay>
+    <source src="videos/course1.mp4" type="video/mp4">
+  </video>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
