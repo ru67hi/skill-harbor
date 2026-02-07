@@ -386,7 +386,29 @@ body {
   .trust-logos img:hover {
     filter: grayscale(0%);
   }
-  
+
+  .video-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-wrapper iframe {
+  width: 80%;
+  max-width: 900px;
+  height: 480px;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+}
+
+
+
 
   /* TEAM HERO */
 .team-hero {
